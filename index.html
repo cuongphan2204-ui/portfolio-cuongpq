@@ -1,34 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Phan Quoc Cuong | Marketing Portfolio</title>
-  <meta name="description"
-    content="Portfolio of Phan Quoc Cuong — Dynamic Marketer driving 1.5x revenue through Data & Creativity. BBA Marketing, Innovation Valedictorian.">
+  <title>Phan Quoc Cuong — Marketing Specialist</title>
+  <meta name="description" content="Portfolio of Phan Quoc Cuong — Marketing Specialist turning consumer data into revenue growth.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Kanit:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
 
+  <!-- SCROLL PROGRESS -->
+  <div class="scroll-progress" id="scroll-progress"></div>
+
   <!-- NAV -->
-  <nav class="nav">
+  <nav class="nav" id="nav">
     <div class="nav-inner">
       <a href="#" class="nav-logo">PQC<span>.</span></a>
       <ul class="nav-links" id="nav-links">
         <li><a href="#about">About</a></li>
-        <li><a href="#projects">Projects</a></li>
-        <li><a href="#experience">Experience</a></li>
-        <li><a href="#certifications">Certifications</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#cases">Case Studies</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-      <a href="#contact" class="nav-cta">Let's Talk</a>
+      <a href="#contact" class="btn-contact-pill">Contact Me</a>
       <button class="nav-mobile-btn" id="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
-        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-          <line x1="3" y1="12" x2="21" y2="12" />
-          <line x1="3" y1="6" x2="21" y2="6" />
-          <line x1="3" y1="18" x2="21" y2="18" />
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+          <line x1="3" y1="12" x2="21" y2="12"/><line x1="3" y1="6" x2="21" y2="6"/><line x1="3" y1="18" x2="21" y2="18"/>
         </svg>
       </button>
     </div>
@@ -36,421 +36,633 @@
 
   <!-- HERO -->
   <section class="hero" id="hero">
-    <div class="hero-bg"></div>
-    <div class="hero-grid"></div>
-    <div class="hero-content">
-      <div class="hero-eyebrow reveal">Portfolio · 2024</div>
-      <h1 class="hero-title reveal reveal-delay-1">
-        Dynamic<br>
-        <em>Marketer.</em>
-      </h1>
-      <p class="hero-sub reveal reveal-delay-2">
-        Bachelor of Business Administration (Marketing) · Innovation Valedictorian · Impact-driven Strategist driving
-        <strong style="color:var(--text)">1.5× revenue</strong> through Data &amp; Creativity.
-      </p>
-      <div class="hero-actions reveal reveal-delay-3">
-        <a href="#projects" class="btn btn-primary">View Projects →</a>
-        <a href="https://drive.google.com/drive/folders/1_9nvS1sxhCS_q527RJ5F4t49ViojTaY3?usp=sharing" target="_blank"
-          class="btn btn-ghost">Credentials ↗</a>
+
+    <!-- Layer 1 (z1): Full-viewport name — sits behind avatar -->
+    <div class="hero-bg-text" aria-hidden="true">CUONG PHAN</div>
+
+    <!-- Layer 2 (z2): Subtitle — centred below the big name -->
+    <p class="hero-subtitle">Marketing Specialist &amp; Growth Catalyst</p>
+
+    <!-- Layer 3 (z3): Avatar — overlaps both text layers -->
+    <div class="hero-avatar reveal reveal-d1">
+      <img
+        src="https://shrug-person-78902957.figma.site/_components/v2/d24c01ad3a56fc65e942a1f501eb73db42d7cf9a/Rectangle_40443.81459862.png"
+        alt="Cuong avatar"
+        class="hero-avatar-img"
+        loading="eager"
+      >
+    </div>
+
+    <!-- Layer 4 (z4): gradient fade at bottom -->
+    <div class="hero-fade" aria-hidden="true"></div>
+
+    <!-- Layer 5 (z5): bottom bar — description left, button right -->
+    <div class="hero-bottom-bar reveal reveal-d2">
+      <p class="hero-desc">Turning consumer data into revenue<br>growth across dynamic ecosystem ventures.</p>
+      <a href="#contact" class="btn-work-with-me">Work With Me</a>
+    </div>
+
+  </section>
+
+  <!-- MARQUEE -->
+  <div class="marquee-section">
+    <div class="marquee-track">
+      <div class="marquee-content">
+        <span>E-Commerce</span><span class="msep">&middot;</span>
+        <span>TikTok Shop</span><span class="msep">&middot;</span>
+        <span>Consumer Research</span><span class="msep">&middot;</span>
+        <span>KOL / KOC Operations</span><span class="msep">&middot;</span>
+        <span>CRM Optimization</span><span class="msep">&middot;</span>
+        <span>Field Research</span><span class="msep">&middot;</span>
+        <span>Campaign Planning</span><span class="msep">&middot;</span>
+        <span>B2B Development</span><span class="msep">&middot;</span>
+        <span>Data Analysis</span><span class="msep">&middot;</span>
+        <span>Workshop Design</span><span class="msep">&middot;</span>
+        <span>Google Analytics</span><span class="msep">&middot;</span>
+        <span>Shopee</span><span class="msep">&middot;</span>
       </div>
-      <div class="stats-bar reveal reveal-delay-4">
-        <div class="stat-item">
-          <div class="stat-num"><span data-target="1.5" data-suffix="x">1.5x</span></div>
-          <div class="stat-label">Revenue Growth</div>
+      <div class="marquee-content" aria-hidden="true">
+        <span>E-Commerce</span><span class="msep">&middot;</span>
+        <span>TikTok Shop</span><span class="msep">&middot;</span>
+        <span>Consumer Research</span><span class="msep">&middot;</span>
+        <span>KOL / KOC Operations</span><span class="msep">&middot;</span>
+        <span>CRM Optimization</span><span class="msep">&middot;</span>
+        <span>Field Research</span><span class="msep">&middot;</span>
+        <span>Campaign Planning</span><span class="msep">&middot;</span>
+        <span>B2B Development</span><span class="msep">&middot;</span>
+        <span>Data Analysis</span><span class="msep">&middot;</span>
+        <span>Workshop Design</span><span class="msep">&middot;</span>
+        <span>Google Analytics</span><span class="msep">&middot;</span>
+        <span>Shopee</span><span class="msep">&middot;</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- ABOUT / WHAT MAKES ME DIFFERENT -->
+  <section class="about-section" id="about">
+
+    <!-- Decorative 3D corner images (Code_template.md spec) -->
+    <img src="https://shrug-person-78902957.figma.site/_components/v2/ebb2b8f25d8e24d5f0a5ca8af4c950de81aa2fd7/moon_icon.11395d36.png"
+         class="deco-img deco-tl reveal-left" aria-hidden="true" loading="lazy">
+    <img src="https://shrug-person-78902957.figma.site/_components/v2/ebb2b8f25d8e24d5f0a5ca8af4c950de81aa2fd7/lego_icon-1.703bb594.png"
+         class="deco-img deco-tr reveal-right reveal-d1" aria-hidden="true" loading="lazy">
+    <img src="https://shrug-person-78902957.figma.site/_components/v2/ebb2b8f25d8e24d5f0a5ca8af4c950de81aa2fd7/p59_1.4659672e.png"
+         class="deco-img deco-bl reveal-left reveal-d2" aria-hidden="true" loading="lazy">
+    <img src="https://shrug-person-78902957.figma.site/_components/v2/ebb2b8f25d8e24d5f0a5ca8af4c950de81aa2fd7/Group_134-1.2e04f3ce.png"
+         class="deco-img deco-br reveal-right reveal-d3" aria-hidden="true" loading="lazy">
+
+    <div class="about-inner">
+      <h2 class="gradient-heading reveal reveal-heading">What Makes<br>Me Different</h2>
+      <div class="diff-grid">
+        <div class="diff-card reveal">
+          <div class="diff-number">01</div>
+          <div class="diff-body">
+            <div class="diff-title">I research before I execute</div>
+            <div class="diff-desc">419 surveys in Vietnam and 341 field interviews in the Philippines before designing a single campaign or workshop. Zero assumptions, all data.</div>
+          </div>
         </div>
-        <div class="stat-item">
-          <div class="stat-num"><span data-target="341" data-suffix="">341</span></div>
-          <div class="stat-label">Surveys Conducted</div>
+        <div class="diff-card reveal reveal-d1">
+          <div class="diff-number">02</div>
+          <div class="diff-body">
+            <div class="diff-title">I operated at enterprise scale early</div>
+            <div class="diff-desc">Built and presented TikTok Shop quarterly plans for PNJ targeting 3.9B VND GMV, coordinating KOL/KOC up to 2M followers across Brand, Marketing, Operations, and Finance teams simultaneously.</div>
+          </div>
         </div>
-        <div class="stat-item">
-          <div class="stat-num"><span data-target="76" data-suffix="%">76%</span></div>
-          <div class="stat-label">Conversion Intent</div>
+        <div class="diff-card reveal reveal-d2">
+          <div class="diff-number">03</div>
+          <div class="diff-body">
+            <div class="diff-title">I work across industries and borders</div>
+            <div class="diff-desc">Retail, education, international NGO in the Philippines, global competition across 20+ countries. Most candidates my level have depth in one context. I have proven results in four.</div>
+          </div>
         </div>
-        <div class="stat-item">
-          <div class="stat-num">Top 10</div>
-          <div class="stat-label">Global SBC 2024</div>
+        <div class="diff-card reveal reveal-d3">
+          <div class="diff-number">04</div>
+          <div class="diff-body">
+            <div class="diff-title">My research always closes with numbers</div>
+            <div class="diff-desc">Philippines: 70% conflict reduction. SBC: 4.8/5 uniqueness rating, Top 10 Global. PNJ: 95% satisfaction, 213M VND in one livestream. Research in, results out — every time.</div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- ABOUT -->
-  <section class="section" id="about">
-    <div class="section-inner">
-      <div class="section-header reveal">
-        <div class="section-label">About</div>
-        <h2 class="section-title">Different Versions, <span>Same Core</span></h2>
-        <p class="section-desc">Adaptable roles, unified purpose — delivering measurable growth and real social impact.
-        </p>
-      </div>
-      <div class="identity-grid">
-        <div class="identity-card reveal reveal-delay-1" style="--card-accent:var(--accent)">
-          <div class="card-icon" style="background:rgba(79,142,247,0.12);color:var(--accent)">📈</div>
-          <div class="card-title">The Revenue Driver</div>
-          <div class="card-desc">Scales brands fast. Turns TikTok &amp; data into sustainable business growth.</div>
-          <div class="card-metrics">
-            <div>
-              <div class="metric-num" style="color:var(--accent)">1.38x</div>
-              <div class="metric-label">Revenue Q1</div>
-            </div>
-            <div>
-              <div class="metric-num" style="color:var(--accent)">15%</div>
-              <div class="metric-label">Retention ↑</div>
-            </div>
+  <!-- SKILLS (white bg, rounded top corners) -->
+  <section class="skills-section" id="skills">
+    <div class="skills-inner">
+      <h2 class="skills-heading reveal reveal-heading">Skills</h2>
+      <div class="skills-list">
+
+        <div class="skill-item reveal">
+          <div class="skill-num">01</div>
+          <div class="skill-body">
+            <div class="skill-name">E-Commerce &amp; Platforms</div>
+            <div class="skill-tags">Shopee &middot; TikTok Shop &middot; Shopee Business Advisor &middot; TikTok Seller Center &middot; Chatbox Automation &middot; Remarketing Workflow</div>
           </div>
         </div>
-        <div class="identity-card reveal reveal-delay-2" style="--card-accent:var(--accent-2)">
-          <div class="card-icon" style="background:rgba(52,211,153,0.12);color:var(--accent-2)">🤝</div>
-          <div class="card-title">The Impact Architect</div>
-          <div class="card-desc">Builds real change. Conducted deep research &amp; workshops in Tondo slums,
-            Philippines.</div>
-          <div class="card-metrics">
-            <div>
-              <div class="metric-num" style="color:var(--accent-2)">341</div>
-              <div class="metric-label">Surveys</div>
-            </div>
-            <div>
-              <div class="metric-num" style="color:var(--accent-2)">70%</div>
-              <div class="metric-label">Conflict Cut</div>
-            </div>
+
+        <div class="skill-item reveal reveal-d1">
+          <div class="skill-num">02</div>
+          <div class="skill-body">
+            <div class="skill-name">Analytics &amp; Reporting</div>
+            <div class="skill-tags">Google Analytics &middot; GMV / CR / Traffic Planning &middot; KPI Reporting &middot; Campaign Performance Analysis &middot; Consumer Data Analysis</div>
           </div>
         </div>
-        <div class="identity-card reveal reveal-delay-3" style="--card-accent:var(--gold)">
-          <div class="card-icon" style="background:rgba(245,197,24,0.12);color:var(--gold)">🔍</div>
-          <div class="card-title">The Insight Hunter</div>
-          <div class="card-desc">Finds hidden truths. Combines revenue muscle with consumer psychology for lasting
-            growth.</div>
-          <div class="card-metrics">
-            <div>
-              <div class="metric-num" style="color:var(--gold)">76%</div>
-              <div class="metric-label">Conversion Intent</div>
-            </div>
+
+        <div class="skill-item reveal reveal-d2">
+          <div class="skill-num">03</div>
+          <div class="skill-body">
+            <div class="skill-name">Research &amp; Insights</div>
+            <div class="skill-tags">Field Survey Design &middot; Consumer Behavior Analysis &middot; Data Reporting &middot; Workshop Design &middot; Insight-to-Action Translation</div>
           </div>
         </div>
-        <div class="identity-card reveal reveal-delay-4" style="--card-accent:var(--accent-3)">
-          <div class="card-icon" style="background:rgba(167,139,250,0.12);color:var(--accent-3)">🧩</div>
-          <div class="card-title">The Full-Stack Strategist</div>
-          <div class="card-desc">Blends business &amp; humanity. Delivered massive growth at PNJ &amp; stood out
-            globally.</div>
-          <div class="card-metrics">
-            <div>
-              <div class="metric-num" style="color:var(--accent-3)">1.5x</div>
-              <div class="metric-label">PNJ Revenue</div>
-            </div>
-            <div>
-              <div class="metric-num" style="color:var(--accent-3)">Top 10</div>
-              <div class="metric-label">Global SBC</div>
-            </div>
+
+        <div class="skill-item reveal reveal-d3">
+          <div class="skill-num">04</div>
+          <div class="skill-body">
+            <div class="skill-name">Marketing Execution</div>
+            <div class="skill-tags">TikTok Strategy &middot; KOL / KOC Coordination &middot; Multi-channel Campaign &middot; Content Planning &middot; Event Coordination &middot; B2B Business Development</div>
           </div>
         </div>
-        <div class="identity-banner reveal">
-          <div class="banner-text">
-            <h3>The Value Creator</h3>
-            <p>"Sees growth as both profit and purpose. Turns insights into revenue <strong>AND</strong> real social
-              impact."</p>
+
+        <div class="skill-item reveal reveal-d4">
+          <div class="skill-num">05</div>
+          <div class="skill-body">
+            <div class="skill-name">AI &amp; Tools</div>
+            <div class="skill-tags">ChatGPT &middot; Grok &middot; Canva &middot; CapCut &middot; CRM Systems &middot; Microsoft Office &middot; Google Workspace</div>
           </div>
-          <div class="banner-icon">⚡</div>
         </div>
+
       </div>
     </div>
   </section>
 
-  <!-- PROJECTS -->
-  <section class="section" id="projects">
-    <div class="section-inner">
-      <div class="section-header reveal">
-        <div class="section-label">Work</div>
-        <h2 class="section-title">Featured <span>Projects</span></h2>
-      </div>
-      <div class="projects-list">
-        <!-- Project 1 -->
-        <div class="project-item reveal">
-          <div class="project-img-wrap">
-            <img src="images/frig.jpg" alt="Fridggie Vietnam">
-          </div>
-          <div>
-            <div class="project-tag" style="color:var(--accent)">Top 10 Global SBC 2024</div>
-            <h3 class="project-name">Fridggie Vietnam</h3>
-            <p class="project-desc">A smart food management app designed to reduce food waste. Conducted mixed-methods
-              research bridging consumer behaviour and sustainable practices — achieving 76% purchase intent rate.</p>
-            <a href="https://drive.google.com/drive/folders/1kVGnOgSfYYz9ByXBKznh0_kOI9Mw2Q_r?usp=sharing"
-              target="_blank" class="project-link">View Case Study →</a>
-          </div>
-        </div>
-        <!-- Project 2 -->
-        <div class="project-item reverse reveal">
-          <div class="project-img-wrap">
-            <img src="images/greenpod.jpg" alt="GreenPods ATM">
-          </div>
-          <div>
-            <div class="project-tag" style="color:var(--accent-2)">Re-Plastic 2024</div>
-            <h3 class="project-name">GreenPods ATM</h3>
-            <p class="project-desc">An AI-integrated plastic collection system providing instant rewards to drive green
-              consumer behaviour. Combines technology with behavioural psychology to form sustainable habits
-              efficiently.</p>
-            <a href="https://drive.google.com/drive/folders/1FKcun26yf0nB8DS9kP2Ml_PlDmczVBvF?usp=sharing"
-              target="_blank" class="project-link">View Case Study →</a>
-          </div>
-        </div>
-        <!-- Project 3 -->
-        <div class="project-item reveal">
-          <div class="project-img-wrap">
-            <img src="images/aeon_mall.jpg" alt="Deadline Divers — Aeon Vietnam">
-          </div>
-          <div>
-            <div class="project-tag" style="color:var(--accent-3)">Aeon Vietnam</div>
-            <h3 class="project-name">Deadline Divers</h3>
-            <p class="project-desc">A comprehensive 5-year strategic development plan (2025–2030) for Aeon Vietnam,
-              revolving around elevating customer experience as the ultimate competitive advantage.</p>
-            <a href="https://drive.google.com/file/d/1nnZZhbVLYp8SlxgbBrtnWhu8W4C52MLc/view?usp=sharing"
-              target="_blank" class="project-link">View Case Study →</a>
-          </div>
-        </div>
-      </div>
-      <div class="projects-more reveal">
-        <a href="https://drive.google.com/drive/folders/1iZn9BfRhml_OXagxVGRVVQnyvs-y3Lw9?usp=sharing" target="_blank"
-          class="btn btn-ghost">View All Achievements ↗</a>
-      </div>
+  <!-- CASE STUDIES -->
+  <section class="cases-section" id="cases">
+    <div class="cases-header reveal">
+      <h2 class="gradient-heading reveal reveal-heading">Case Studies</h2>
     </div>
+
+    <div class="cases-list">
+
+      <!-- ══ CASE 01 ══ -->
+      <article class="cc-card reveal">
+        <div class="cc-top">
+          <div class="cc-top-left">
+            <div class="cc-num-row">
+              <span class="cc-num">01</span>
+              <span class="cc-category">Community Impact &amp; Research</span>
+            </div>
+            <h3 class="cc-name">Philippines Community Wellness Campaign</h3>
+            <div class="cc-org">BYSM Bless The Children Foundation &nbsp;&bull;&nbsp; Tondo, Manila &nbsp;&bull;&nbsp; 09&ndash;11/2025</div>
+          </div>
+          <div class="cc-tags">
+            <span class="cc-tag">Field Research</span>
+            <span class="cc-tag">Workshop Design</span>
+            <span class="cc-tag">Community Impact</span>
+          </div>
+        </div>
+
+        <div class="cc-divider"></div>
+
+        <div class="cc-body">
+          <div class="cc-section">
+            <div class="cc-section-label">The Challenge / Problem</div>
+            <p class="cc-text">Women and children in the Tondo district of Manila were facing severe psychological stress, but no one had clear data on what the actual pain points were. BYSM needed field research to identify the real problem before designing any intervention program.</p>
+          </div>
+          <div class="cc-section">
+            <div class="cc-section-label">What I Did</div>
+            <ul class="cc-list">
+              <li>Went to the field in Tondo on Day 1 and directly surveyed the community; analyzed all BYSM data plus new survey data across Days 2&ndash;3</li>
+              <li>Wrote a research report identifying the core pain point: lack of practical tools for emotional regulation and family communication &mdash; not lack of awareness</li>
+              <li>Designed 6 workshops split across 2 target groups (mothers and children) based directly on research insights</li>
+              <li>Each workshop ran twice (morning and afternoon) to maximize community reach; facilitated all 6 sessions using the &ldquo;I-Feel&rdquo; emotional regulation technique</li>
+            </ul>
+          </div>
+          <div class="cc-role-box">
+            <div class="cc-role-label">My Role &amp; Impact</div>
+            <p>End-to-end ownership: survey design, field data collection, data analysis, insight report writing, workshop design, and facilitation of all 6 sessions.</p>
+          </div>
+        </div>
+
+        <a href="https://drive.google.com/drive/folders/16uC5bdSCshmd5usueQOWnChjZXbgbEjM?usp=sharing" target="_blank" class="cc-discuss-btn">Discuss Case Study &#x2197;</a>
+
+        <div class="cc-stats-grid">
+          <div class="cc-stat"><div class="cc-stat-label">Field Surveys Completed</div><div class="cc-stat-value">341</div></div>
+          <div class="cc-stat"><div class="cc-stat-label">Workshop Participants</div><div class="cc-stat-value">50+</div></div>
+          <div class="cc-stat"><div class="cc-stat-label">Community Conflict Reduction</div><div class="cc-stat-value">70%</div></div>
+          <div class="cc-stat"><div class="cc-stat-label">Felt Happier After Program</div><div class="cc-stat-value">90%</div></div>
+          <div class="cc-stat"><div class="cc-stat-label">Applied I-Feel Technique</div><div class="cc-stat-value">100%</div></div>
+          <div class="cc-stat"><div class="cc-stat-label">Avg Anger Level Reduced</div><div class="cc-stat-value">0.77 pts</div></div>
+        </div>
+
+        <div class="cc-images">
+          <div class="cc-images-left">
+            <div class="cc-img-wrap"><img src="images/case1_bysm/2dbbdc2c-8b8c-437c-90ea-d44621abf58b.jpg" alt="BYSM Philippines community" loading="lazy"></div>
+            <div class="cc-img-wrap"><img src="images/case1_bysm/60c07073-3105-4f62-8afb-945bd757fc48.jpg" alt="BYSM fieldwork" loading="lazy"></div>
+          </div>
+          <div class="cc-images-right">
+            <div class="cc-img-wrap cc-img-tall"><img src="images/case1_bysm/greenpod.jpg" alt="BYSM community work" loading="lazy"></div>
+          </div>
+        </div>
+      </article>
+
+      <!-- ══ CASE 02 ══ -->
+      <article class="cc-card reveal">
+        <div class="cc-top">
+          <div class="cc-top-left">
+            <div class="cc-num-row">
+              <span class="cc-num">02</span>
+              <span class="cc-category">E-Commerce &amp; Operations</span>
+            </div>
+            <h3 class="cc-name">TikTok Shop Launch &amp; Operations</h3>
+            <div class="cc-org">Phu Nhuan Jewelry (PNJ) &nbsp;&bull;&nbsp; 04/2022 &ndash; 05/2023</div>
+          </div>
+          <div class="cc-tags">
+            <span class="cc-tag">E-Commerce</span>
+            <span class="cc-tag">TikTok Shop</span>
+            <span class="cc-tag">KOL / KOC</span>
+            <span class="cc-tag">Campaign Planning</span>
+          </div>
+        </div>
+
+        <div class="cc-divider"></div>
+
+        <div class="cc-body">
+          <div class="cc-section">
+            <div class="cc-section-label">The Challenge / Problem</div>
+            <p class="cc-text">PNJ had just launched TikTok Shop but had no structured operations process, no quarterly campaign plan, and the store was receiving low ratings that were hurting traffic and conversion.</p>
+          </div>
+          <div class="cc-section">
+            <div class="cc-section-label">What I Did</div>
+            <ul class="cc-list">
+              <li>Built annual, quarterly, and monthly operation plans for TikTok Shop, calculating target GMV, CR, traffic, and units sold per campaign</li>
+              <li>Reached out and booked KOL/KOC for livestream sessions; negotiated commission rates of 8&ndash;12%, coordinated scripts and product lists 15 days before each live</li>
+              <li>Tracked per-session performance by CTR, C/O, GMV, and AOV; analyzed root causes of low store ratings and worked directly with TikTok to resolve each issue</li>
+              <li>Set up automation workflows for chatbox and Shopee; designed automatic remarketing for abandoned cart customers</li>
+            </ul>
+          </div>
+          <div class="cc-role-box">
+            <div class="cc-role-label">My Role &amp; Impact</div>
+            <p>Full planning, metric calculation, KOL/KOC booking, cross-team presentation to Brand, Marketing, Operations and Finance, performance tracking, and platform issue resolution.</p>
+          </div>
+        </div>
+
+        <a href="https://drive.google.com/drive/folders/1r5WYNdJni8V4LD_Yeiryv4_vWFqPrM7j?usp=sharing" target="_blank" class="cc-discuss-btn">Discuss Case Study &#x2197;</a>
+
+        <div class="cc-stats-grid">
+          <div class="cc-stat"><div class="cc-stat-label">Q2/2023 GMV Target (4 Brands)</div><div class="cc-stat-value">3.9B VND</div></div>
+          <div class="cc-stat"><div class="cc-stat-label">Single Livestream Revenue</div><div class="cc-stat-value">213M VND</div></div>
+          <div class="cc-stat"><div class="cc-stat-label">Livestream Viewers (Aug 2023)</div><div class="cc-stat-value">123,600</div></div>
+          <div class="cc-stat"><div class="cc-stat-label">Orders in One Live Session</div><div class="cc-stat-value">424</div></div>
+          <div class="cc-stat"><div class="cc-stat-label">KOL Campaign Revenue (Oct)</div><div class="cc-stat-value">307M VND</div></div>
+          <div class="cc-stat"><div class="cc-stat-label">Top KOL Booked (Followers)</div><div class="cc-stat-value">2M+</div></div>
+        </div>
+
+        <div class="cc-images">
+          <div class="cc-images-left">
+            <div class="cc-img-wrap"><img src="images/case2_pnj/30093961-047f-4493-85d9-9b34aac10026.jpg" alt="PNJ TikTok Shop" loading="lazy"></div>
+            <div class="cc-img-wrap"><img src="images/case2_pnj/Screenshot%202026-06-11%20at%2021.08.56.png" alt="PNJ campaign" loading="lazy"></div>
+          </div>
+          <div class="cc-images-right">
+            <div class="cc-img-wrap cc-img-tall"><img src="images/case2_pnj/Screenshot%202026-06-11%20at%2021.09.28.png" alt="PNJ results" loading="lazy"></div>
+          </div>
+        </div>
+      </article>
+
+      <!-- ══ CASE 03 ══ -->
+      <article class="cc-card reveal">
+        <div class="cc-top">
+          <div class="cc-top-left">
+            <div class="cc-num-row">
+              <span class="cc-num">03</span>
+              <span class="cc-category">CRM &amp; Operations</span>
+            </div>
+            <h3 class="cc-name">Hotline Channel &amp; CRM Optimization</h3>
+            <div class="cc-org">Phu Nhuan Jewelry (PNJ) &nbsp;&bull;&nbsp; 04/2022 &ndash; 05/2023</div>
+          </div>
+          <div class="cc-tags">
+            <span class="cc-tag">CRM</span>
+            <span class="cc-tag">Hotline Ops</span>
+            <span class="cc-tag">Workflow Automation</span>
+          </div>
+        </div>
+
+        <div class="cc-divider"></div>
+
+        <div class="cc-body">
+          <div class="cc-section">
+            <div class="cc-section-label">The Challenge / Problem</div>
+            <p class="cc-text">The hotline channel had no clear performance tracking system. Sales staff lacked customer context during calls, leading to low conversion rates and slow response times.</p>
+          </div>
+          <div class="cc-section">
+            <div class="cc-section-label">What I Did</div>
+            <ul class="cc-list">
+              <li>Integrated each customer&rsquo;s purchase history into the sales interface so staff could see it immediately when answering calls</li>
+              <li>Set up a workflow that surfaced the right timing to offer discount codes based on each customer&rsquo;s buying behavior</li>
+              <li>Reviewed call recordings daily, tracked inbound and outbound call data, and managed CR and traffic metrics weekly</li>
+              <li>Identified root causes of system errors and worked with the technical partner to resolve issues and add new features; set up AI auto-reply workflows and managed negative customer feedback</li>
+            </ul>
+          </div>
+          <div class="cc-role-box">
+            <div class="cc-role-label">My Role &amp; Impact</div>
+            <p>Full hotline channel management, technical coordination with the CRM partner, and data-driven sales process design.</p>
+          </div>
+        </div>
+
+        <a href="https://drive.google.com/drive/folders/1r5WYNdJni8V4LD_Yeiryv4_vWFqPrM7j?usp=sharing" target="_blank" class="cc-discuss-btn">Discuss Case Study &#x2197;</a>
+
+        <div class="cc-stats-grid">
+          <div class="cc-stat"><div class="cc-stat-label">Response Time Reduced</div><div class="cc-stat-value">20%</div></div>
+          <div class="cc-stat"><div class="cc-stat-label">Customer Satisfaction Score</div><div class="cc-stat-value">95%</div></div>
+          <div class="cc-stat"><div class="cc-stat-label">Purchase History Integrated</div><div class="cc-stat-value">100%</div></div>
+          <div class="cc-stat"><div class="cc-stat-label">Review Cadence</div><div class="cc-stat-value">Daily Calls</div></div>
+          <div class="cc-stat"><div class="cc-stat-label">Discount Timing System</div><div class="cc-stat-value">CRM-Driven</div></div>
+          <div class="cc-stat"><div class="cc-stat-label">Reply Automation</div><div class="cc-stat-value">AI Workflow</div></div>
+        </div>
+
+        <div class="cc-images">
+          <div class="cc-images-left">
+            <div class="cc-img-wrap"><img src="images/case3_hotline/18db90ac-a97a-4094-b2f8-e05ced85aff8.jpg" alt="Hotline CRM system" loading="lazy"></div>
+            <div class="cc-img-wrap"><img src="images/case3_hotline/bf33229b-5b4f-4b78-b7e3-468a17b91b12.jpg" alt="CRM dashboard" loading="lazy"></div>
+          </div>
+          <div class="cc-images-right">
+            <div class="cc-img-wrap cc-img-tall"><img src="images/case3_hotline/bfabc5d0-3812-425b-a337-a557fa2713be.jpg" alt="PNJ hotline operations" loading="lazy"></div>
+          </div>
+        </div>
+      </article>
+
+      <!-- ══ CASE 04 ══ -->
+      <article class="cc-card reveal">
+        <div class="cc-top">
+          <div class="cc-top-left">
+            <div class="cc-num-row">
+              <span class="cc-num">04</span>
+              <span class="cc-category">Business Development &amp; B2B</span>
+            </div>
+            <h3 class="cc-name">B2B Partnership &amp; Revenue Growth</h3>
+            <div class="cc-org">YOLA English Center &nbsp;&bull;&nbsp; 03/2021 &ndash; 03/2022</div>
+          </div>
+          <div class="cc-tags">
+            <span class="cc-tag">Business Development</span>
+            <span class="cc-tag">B2B</span>
+            <span class="cc-tag">Event Marketing</span>
+          </div>
+        </div>
+
+        <div class="cc-divider"></div>
+
+        <div class="cc-body">
+          <div class="cc-section">
+            <div class="cc-section-label">The Challenge / Problem</div>
+            <p class="cc-text">YOLA needed to quickly expand its corporate client base and grow revenue, but had no structured B2B outreach process and had not yet used events as a lead generation channel.</p>
+          </div>
+          <div class="cc-section">
+            <div class="cc-section-label">What I Did</div>
+            <ul class="cc-list">
+              <li>Received and analyzed training needs from corporate clients; advised and proposed suitable English course solutions tailored to each company&rsquo;s objectives</li>
+              <li>Coordinated with the marketing team to organize activation events to attract potential clients</li>
+              <li>Evaluated partnership and sponsorship proposals from external parties; wrote assessment reports with clear recommendations and proposed terms</li>
+              <li>Executed multi-channel marketing campaigns to drive 1.5&times; revenue growth in 3 months</li>
+            </ul>
+          </div>
+          <div class="cc-role-box">
+            <div class="cc-role-label">My Role &amp; Impact</div>
+            <p>Direct corporate client consulting, event coordination, evaluation of external partnership proposals, and full campaign execution.</p>
+          </div>
+        </div>
+
+        <a href="https://drive.google.com/drive/folders/1fb6Le0MZlRdklruX8Sgj-KsBMly4FDyV?usp=sharing" target="_blank" class="cc-discuss-btn">Discuss Case Study &#x2197;</a>
+
+        <div class="cc-stats-grid">
+          <div class="cc-stat"><div class="cc-stat-label">Revenue Growth Achieved</div><div class="cc-stat-value">1.5&times; in 3 mo</div></div>
+          <div class="cc-stat"><div class="cc-stat-label">Partnerships Signed</div><div class="cc-stat-value">30+</div></div>
+          <div class="cc-stat"><div class="cc-stat-label">Event Attendees</div><div class="cc-stat-value">500+</div></div>
+          <div class="cc-stat"><div class="cc-stat-label">Qualified Leads Generated</div><div class="cc-stat-value">200</div></div>
+          <div class="cc-stat"><div class="cc-stat-label">Outreach Type</div><div class="cc-stat-value">B2B Direct</div></div>
+          <div class="cc-stat"><div class="cc-stat-label">Channels Used</div><div class="cc-stat-value">Multi-channel</div></div>
+        </div>
+
+        <div class="cc-images">
+          <div class="cc-images-left">
+            <div class="cc-img-wrap" style="background:linear-gradient(135deg,#1a1000,#3d2800);display:flex;align-items:center;justify-content:center;">
+              <div style="text-align:center;padding:2rem;"><div style="font-size:clamp(2rem,6vw,5rem);font-weight:900;letter-spacing:-0.04em;background:linear-gradient(180deg,#646973,#BBCCD7);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1;">1.5&times;</div><div style="font-size:0.68rem;font-weight:600;text-transform:uppercase;letter-spacing:0.1em;color:rgba(215,226,234,0.4);margin-top:0.4rem;">Revenue in 3 months</div></div>
+            </div>
+            <div class="cc-img-wrap" style="background:linear-gradient(135deg,#1a0800,#3d1800);display:flex;align-items:center;justify-content:center;">
+              <div style="text-align:center;padding:2rem;"><div style="font-size:clamp(2rem,6vw,5rem);font-weight:900;letter-spacing:-0.04em;background:linear-gradient(180deg,#646973,#BBCCD7);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1;">30+</div><div style="font-size:0.68rem;font-weight:600;text-transform:uppercase;letter-spacing:0.1em;color:rgba(215,226,234,0.4);margin-top:0.4rem;">Partnerships Signed</div></div>
+            </div>
+          </div>
+          <div class="cc-images-right">
+            <div class="cc-img-wrap cc-img-tall" style="background:linear-gradient(160deg,#180e00,#2c1a00);display:flex;align-items:center;justify-content:center;">
+              <div style="text-align:center;padding:2rem;"><div style="font-size:clamp(3rem,8vw,7rem);font-weight:900;letter-spacing:-0.04em;background:linear-gradient(180deg,#646973,#BBCCD7);-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1;">500+</div><div style="font-size:0.72rem;font-weight:600;text-transform:uppercase;letter-spacing:0.1em;color:rgba(215,226,234,0.4);margin-top:0.5rem;">Event Attendees</div></div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- ══ CASE 05 ══ -->
+      <!-- Note: no case4_yola image folder — keeping metric visuals -->
+      <article class="cc-card reveal">
+        <div class="cc-top">
+          <div class="cc-top-left">
+            <div class="cc-num-row">
+              <span class="cc-num">05</span>
+              <span class="cc-category">Social Business &amp; Research</span>
+            </div>
+            <h3 class="cc-name">Fridggie Vietnam</h3>
+            <div class="cc-org">Social Business Creation 2024 (SBC Global) &nbsp;&bull;&nbsp; SBC Global Competition 2024</div>
+          </div>
+          <div class="cc-tags">
+            <span class="cc-tag">Consumer Research</span>
+            <span class="cc-tag">Market Segmentation</span>
+            <span class="cc-tag">Go-to-Market</span>
+            <span class="cc-tag">ESG Integration</span>
+          </div>
+        </div>
+
+        <div class="cc-divider"></div>
+
+        <div class="cc-body">
+          <div class="cc-section">
+            <div class="cc-section-label">The Challenge / Problem</div>
+            <p class="cc-text">Vietnam ranks 2nd in Asia-Pacific for food waste &mdash; 8.8 million tons discarded annually, equal to 2% of GDP. Existing apps targeted supply chain issues and missed the real driver: unmanaged household behavior. The challenge was to prove this with real data, then build a profitable business model that still solves an urgent environmental problem.</p>
+          </div>
+          <div class="cc-section">
+            <div class="cc-section-label">What I Did</div>
+            <ul class="cc-list">
+              <li>Led primary research across Hanoi, Da Nang, and HCMC; conducted 19 in-depth interviews (25&ndash;40 min each) and distributed surveys to 419 respondents to map consumer fridge-management personas</li>
+              <li>Built customer personas and market segmentation across 4 groups; mapped competitive landscape across all iOS and Android food apps and identified key feature gaps</li>
+              <li>Ran quantitative research in Round 2 across 3 regions with 240 respondents, testing app concept, social mantra, and purchase intent</li>
+              <li>Authored the full academic case study covering business model validation, ESG integration, financial projections, and crowdfunding; engineered a freemium go-to-market subscription app concept integrated with Bach Hoa Xanh, Aeon, and Go!</li>
+            </ul>
+          </div>
+          <div class="cc-role-box">
+            <div class="cc-role-label">My Role &amp; Impact</div>
+            <p>Research methodology design, multi-city fieldwork execution, quantitative/qualitative analysis, segmentation mapping, academic case study writing, go-to-market strategy, and international pitch support.</p>
+          </div>
+        </div>
+
+        <a href="https://drive.google.com/drive/folders/16uC5bdSCshmd5usueQOWnChjZXbgbEjM?usp=sharing" target="_blank" class="cc-discuss-btn">Discuss Case Study &#x2197;</a>
+
+        <div class="cc-stats-grid">
+          <div class="cc-stat"><div class="cc-stat-label">Global Merit Achieved</div><div class="cc-stat-value">Top 10 Global</div></div>
+          <div class="cc-stat"><div class="cc-stat-label">Total Survey Samples</div><div class="cc-stat-value">419 + 240 Resp.</div></div>
+          <div class="cc-stat"><div class="cc-stat-label">Capital Crowdfunded</div><div class="cc-stat-value">138,940,000 VND</div></div>
+          <div class="cc-stat"><div class="cc-stat-label">Purchase / Interest Score</div><div class="cc-stat-value">4.7 / 5.0 Rating</div></div>
+          <div class="cc-stat"><div class="cc-stat-label">In-Depth Interviews</div><div class="cc-stat-value">19 across VN</div></div>
+          <div class="cc-stat"><div class="cc-stat-label">Demand for Tool</div><div class="cc-stat-value">76% of Segment</div></div>
+        </div>
+
+        <div class="cc-images">
+          <div class="cc-images-left">
+            <div class="cc-img-wrap"><img src="images/case5_fridgge/BAOR_300524_001.jpg" alt="Fridggie Vietnam fieldwork" loading="lazy"></div>
+            <div class="cc-img-wrap"><img src="images/case5_fridgge/BAOR_300524_038%20(1).jpg" alt="Fridggie team research" loading="lazy"></div>
+          </div>
+          <div class="cc-images-right">
+            <div class="cc-img-wrap cc-img-tall"><img src="images/case5_fridgge/BAOR_300524_043.jpg" alt="Fridggie SBC competition" loading="lazy"></div>
+          </div>
+        </div>
+      </article>
+
+    </div><!-- /.cases-list -->
   </section>
 
-  <!-- EXPERIENCE -->
-  <section class="section" id="experience">
-    <div class="section-inner">
-      <div class="section-header reveal">
-        <div class="section-label">Experience</div>
-        <h2 class="section-title">Professional <span>Timeline</span></h2>
-      </div>
-      <div class="timeline">
-        <div class="timeline-item reveal" style="--dot-color:var(--accent)">
-          <div class="timeline-dot"></div>
-          <div class="timeline-period">2022 – 2023</div>
-          <div class="timeline-company">Phu Nhuan Jewelry (PNJ)</div>
-          <div class="timeline-role">Customer Service &amp; Marketing</div>
-          <ul class="timeline-points">
-            <li class="timeline-point">Spearheaded TikTok Shop campaigns, driving <strong>1.38× revenue growth</strong>
-              in Q1.</li>
-            <li class="timeline-point">Optimized OmiCall processes and automated audits — 30% error reduction and boosted ratings.</li>
-            <li class="timeline-point">Leveraged Google Analytics for predictive insights, leading to a 15% increase in customer retention.</li>
-          </ul>
+  <!-- EDUCATION & AWARDS -->
+  <section class="edu-section" id="education">
+    <div class="edu-inner">
+      <h2 class="gradient-heading reveal">Education &amp;<br>Awards</h2>
+      <div class="edu-grid">
+        <div class="edu-card reveal">
+          <div class="edu-badge">Education</div>
+          <div class="edu-school">University of Greenwich Vietnam</div>
+          <div class="edu-degree">B.A. Marketing</div>
+          <div class="edu-year">Graduated August 2024</div>
+          <div class="edu-certs">
+            <div class="cert-pill">Online Marketing / SEO / Google Analytics</div>
+            <div class="cert-pill">Digital Marketing &mdash; AI Brain</div>
+            <div class="cert-pill">Consumer Psychology &amp; Brand Strategy</div>
+            <div class="cert-pill">Research Writing</div>
+          </div>
         </div>
-        <div class="timeline-item reveal" style="--dot-color:var(--accent-2)">
-          <div class="timeline-dot"></div>
-          <div class="timeline-period">2025</div>
-          <div class="timeline-company">BYSM – Bless the Children Foundation</div>
-          <div class="timeline-role">Volunteer Marketing &amp; Research Coordinator</div>
-          <ul class="timeline-points">
-            <li class="timeline-point">Conducted in-depth research in Tondo slums (Philippines) on mental health for
-              women &amp; children.</li>
-            <li class="timeline-point">Designed &amp; facilitated psychological workshops ("Words That Heal") — reduced
-              anger levels by 0.77 points.</li>
-            <li class="timeline-point">Strategies cut community conflicts by 70% — tangible global impact.</li>
-          </ul>
+        <div class="edu-card reveal reveal-d1">
+          <div class="edu-badge awards-badge">Awards</div>
+          <div class="award-item">
+            <div class="award-rank">Top 10 Global</div>
+            <div class="award-name">SBC Competition 2023</div>
+            <div class="award-desc">App project competing against teams from 20+ countries</div>
+          </div>
+          <div class="award-item">
+            <div class="award-rank">Top 5 Region</div>
+            <div class="award-name">FPT Talent August 2023</div>
+            <div class="award-desc">Pitched as CEO role</div>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
   <!-- CERTIFICATIONS -->
-  <section class="section" id="certifications">
-    <div class="section-inner">
-      <div class="section-header reveal">
-        <div class="section-label">Credentials</div>
-        <h2 class="section-title">Licenses &amp; <span>Certifications</span></h2>
-        <p class="section-desc">Click any certificate to view full size.</p>
-      </div>
+  <section class="certs-section" id="certifications">
+    <div class="certs-inner">
+      <div class="section-eyebrow reveal">Credentials</div>
+      <h2 class="gradient-heading reveal">Licenses &amp;<br>Certifications</h2>
+      <p class="certs-note reveal">Click any certificate to view full size.</p>
       <div class="certs-grid">
         <div class="cert-card reveal" data-lightbox="certifications/Content Marketing Foundations (2016).png">
-          <div class="cert-img-wrap"><img src="certifications/Content Marketing Foundations (2016).png"
-              alt="Content Marketing Foundations" loading="lazy"></div>
-          <div class="cert-info">
-            <div class="cert-name">Content Marketing Foundations</div>
-            <div class="cert-year">2016</div>
-          </div>
+          <div class="cert-img-wrap"><img src="certifications/Content Marketing Foundations (2016).png" alt="Content Marketing Foundations" loading="lazy"></div>
+          <div class="cert-info"><div class="cert-name">Content Marketing Foundations</div><div class="cert-issuer">LinkedIn Learning</div></div>
         </div>
-        <div class="cert-card reveal reveal-delay-1"
-          data-lightbox="certifications/Google Analytics Essential Training (2018).png">
-          <div class="cert-img-wrap"><img src="certifications/Google Analytics Essential Training (2018).png"
-              alt="Google Analytics Essential Training" loading="lazy"></div>
-          <div class="cert-info">
-            <div class="cert-name">Google Analytics Essential Training</div>
-            <div class="cert-year">2018</div>
-          </div>
+        <div class="cert-card reveal reveal-d1" data-lightbox="certifications/Google Analytics Essential Training (2018).png">
+          <div class="cert-img-wrap"><img src="certifications/Google Analytics Essential Training (2018).png" alt="Google Analytics Essential Training" loading="lazy"></div>
+          <div class="cert-info"><div class="cert-name">Google Analytics Essential Training</div><div class="cert-issuer">LinkedIn Learning</div></div>
         </div>
-        <div class="cert-card reveal reveal-delay-2"
-          data-lightbox="certifications/Online Marketing Foundations (2020).png">
-          <div class="cert-img-wrap"><img src="certifications/Online Marketing Foundations (2020).png"
-              alt="Online Marketing Foundations" loading="lazy"></div>
-          <div class="cert-info">
-            <div class="cert-name">Online Marketing Foundations</div>
-            <div class="cert-year">2020</div>
-          </div>
+        <div class="cert-card reveal reveal-d2" data-lightbox="certifications/Online Marketing Foundations (2020).png">
+          <div class="cert-img-wrap"><img src="certifications/Online Marketing Foundations (2020).png" alt="Online Marketing Foundations" loading="lazy"></div>
+          <div class="cert-info"><div class="cert-name">Online Marketing / SEO</div><div class="cert-issuer">LinkedIn Learning</div></div>
         </div>
-        <div class="cert-card reveal reveal-delay-3" data-lightbox="certifications/SEO Foundations (2019).png">
-          <div class="cert-img-wrap"><img src="certifications/SEO Foundations (2019).png" alt="SEO Foundations"
-              loading="lazy"></div>
-          <div class="cert-info">
-            <div class="cert-name">SEO Foundations</div>
-            <div class="cert-year">2019</div>
-          </div>
+        <div class="cert-card reveal reveal-d3" data-lightbox="certifications/SEO Foundations (2019).png">
+          <div class="cert-img-wrap"><img src="certifications/SEO Foundations (2019).png" alt="SEO Foundations" loading="lazy"></div>
+          <div class="cert-info"><div class="cert-name">SEO Foundations</div><div class="cert-issuer">LinkedIn Learning</div></div>
         </div>
-        <div class="cert-card reveal reveal-delay-4" data-lightbox="certifications/PHAN QUỐC CƯỜNG (1).png">
-          <div class="cert-img-wrap"><img src="certifications/PHAN QUỐC CƯỜNG (1).png" alt="Certificate" loading="lazy">
-          </div>
-          <div class="cert-info">
-            <div class="cert-name">Digital Marketing — AI Brain</div>
-            <div class="cert-year">2024</div>
-          </div>
+        <div class="cert-card reveal reveal-d4" data-lightbox="certifications/PHAN QUỐC CƯỜNG (1).png">
+          <div class="cert-img-wrap"><img src="certifications/PHAN QUỐC CƯỜNG (1).png" alt="Digital Marketing Certificate" loading="lazy"></div>
+          <div class="cert-info"><div class="cert-name">Digital Marketing</div><div class="cert-issuer">AI Brain</div></div>
         </div>
-        <div class="cert-card reveal reveal-delay-1" data-lightbox="certifications/certificate (4).png">
-          <div class="cert-img-wrap"><img src="certifications/certificate (4).png" alt="Consumer Psychology Certificate"
-              loading="lazy"></div>
-          <div class="cert-info">
-            <div class="cert-name">Consumer Psych / Brand Strategy</div>
-            <div class="cert-year">Tomorrow Marketers</div>
-          </div>
+        <div class="cert-card reveal reveal-d1" data-lightbox="certifications/certificate (4).png">
+          <div class="cert-img-wrap"><img src="certifications/certificate (4).png" alt="Consumer Psychology Certificate" loading="lazy"></div>
+          <div class="cert-info"><div class="cert-name">Consumer Psych &amp; Brand Strategy</div><div class="cert-issuer">Tomorrow Marketers</div></div>
         </div>
       </div>
-      <div style="text-align:center;margin-top:2.5rem;" class="reveal">
-        <a href="certifications/Phan Quoc Cuong.pdf" target="_blank" class="btn btn-ghost">Download Full Cert PDF ↗</a>
+      <div class="certs-dl reveal">
+        <a href="https://drive.google.com/drive/folders/1z1U36AUN54o7f7Z4Z5r80fYQ3CQ4Fvk5?usp=sharing" target="_blank" class="btn-ghost-dark">Download Full Cert PDF &#8599;</a>
       </div>
     </div>
   </section>
 
-  <!-- ACTIVITIES -->
-  <section class="section" id="activities">
-    <div class="section-inner">
-      <div class="section-header reveal">
-        <div class="section-label">Activities</div>
-        <h2 class="section-title">Beyond the <span>Classroom</span></h2>
-        <p class="section-desc">Awards, competitions, and community work that shaped who I am.</p>
-      </div>
-      <div class="activities-grid">
-        <div class="activity-card reveal">
-          <div class="activity-img">
-            <img src="images/graduated.jpg" alt="Innovation Valedictorian" loading="lazy">
-          </div>
-          <div class="activity-body">
-            <div class="activity-badge">Achievement</div>
-            <div class="activity-title">Innovation Valedictorian</div>
-            <div class="activity-desc">Recognized as top graduate for outstanding academic and innovation performance at
-              University of Greenwich, Vietnam.</div>
-          </div>
-        </div>
-        <div class="activity-card reveal reveal-delay-1">
-          <div class="activity-img">
-            <img src="images/completed.jpg" alt="Runner Up — Business Competition" loading="lazy">
-          </div>
-          <div class="activity-body">
-            <div class="activity-badge">Competition</div>
-            <div class="activity-title">Runner Up — Business Competition</div>
-            <div class="activity-desc">Secured Runner Up position in a competitive business challenge, demonstrating
-              strategic thinking and execution.</div>
-          </div>
-        </div>
-        <div class="activity-card reveal reveal-delay-2">
-          <div class="activity-img">
-            <img src="images/bysm.jpg" alt="BYSM Philippines — Tondo Research" loading="lazy">
-          </div>
-          <div class="activity-body">
-            <div class="activity-badge">Volunteer</div>
-            <div class="activity-title">BYSM Philippines — Tondo Research</div>
-            <div class="activity-desc">Lived and worked in Tondo slums to conduct 341 surveys and lead mental health
-              workshops for underserved communities.</div>
-          </div>
-        </div>
-       <!-- div class="activity-card reveal reveal-delay-3">
-          <div class="activity-img"
-            style="background:var(--bg-3);display:flex;align-items:center;justify-content:center;font-size:3rem;">🎓
-          </div>
-          <div class="activity-body">
-            <div class="activity-badge">Academic</div>
-            <div class="activity-title">BMI Group Excellence Member</div>
-            <div class="activity-desc">Recognized member of excellence group GR-555-E2024 for outstanding team
-              collaboration and business innovation.</div>
-          </div>
-        </div>
-      </div> -->
-      <div style="text-align:center;margin-top:2.5rem;" class="reveal">
-        <a href="activities/Runner up Cu_ng Phan.pdf" target="_blank" class="btn btn-ghost">View Activity Certificates
-          ↗</a>
-      </div>
-    </div>
-  </section>
-
-  <!-- EDUCATION -->
-  <section class="section" id="education" style="background:var(--bg-2)">
-    <div class="section-inner">
-      <div class="section-header reveal">
-        <div class="section-label">Education</div>
-        <h2 class="section-title">Academic <span>Background</span></h2>
-      </div>
-      <div class="edu-grid">
-        <div class="edu-card reveal">
-          <div class="edu-icon">🎓</div>
-          <div class="edu-school">University of Greenwich, Vietnam</div>
-          <div class="edu-degree">BA (Hons) Business Management<br>Marketing Specialization</div>
-          <div class="edu-year">Aug 2024 · <strong style="color:var(--accent)">Innovation Valedictorian</strong></div>
-        </div>
-        <div class="edu-card reveal reveal-delay-1">
-          <div class="edu-icon">🎨</div>
-          <div class="edu-school">Arena Multimedia, Vietnam</div>
-          <div class="edu-degree">Graphic Design<br>Design Basics</div>
-          <div class="edu-year">May 2021</div>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <footer class="section" id="contact" style="padding-bottom:3rem">
+  <!-- CONTACT / FOOTER -->
+  <footer class="contact-section" id="contact">
     <div class="contact-inner">
-      <div class="reveal">
-        <div class="section-label" style="display:block;margin-bottom:1rem">Contact</div>
-        <h2 class="contact-title">Let's create<br><em
-            style="font-family:'DM Serif Display',serif;font-style:italic;background:linear-gradient(135deg,var(--accent),var(--accent-2));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text">value
-            together.</em></h2>
-        <p class="contact-sub">Open for new opportunities. Whether you have a question or just want to say hi — I'll get
-          back to you!</p>
+
+      <div class="contact-top">
+        <div class="section-eyebrow reveal">Get in touch</div>
+        <h2 class="contact-heading reveal reveal-heading">Let&apos;s create<br><em>value together.</em></h2>
+        <p class="contact-sub reveal reveal-d1">Open for new opportunities &mdash; I&apos;ll get back to you within 24 hours.</p>
+        <a href="mailto:cuongphan2204@gmail.com" class="btn-contact-gradient reveal reveal-d2">Contact Me</a>
       </div>
-      <div class="contact-links reveal reveal-delay-1">
-        <a href="mailto:cuongphan2204@gmail.com" class="contact-link">
-          <span class="contact-link-icon">✉️</span>
-          <span class="contact-link-label">Email</span>
-          <span class="contact-link-value">cuongphan2204@gmail.com</span>
+
+      <!-- CONTACT BAR: single-row icons -->
+      <div class="contact-bar reveal reveal-d1">
+        <a href="mailto:cuongphan2204@gmail.com" class="cbar-item">
+          <span class="cbar-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <rect x="2" y="4" width="20" height="16" rx="2"/><polyline points="2,4 12,13 22,4"/>
+            </svg>
+          </span>
+          <span class="cbar-text">cuongphan2204@gmail.com</span>
         </a>
-        <a href="tel:+84365117700" class="contact-link">
-          <span class="contact-link-icon">📱</span>
-          <span class="contact-link-label">Phone</span>
-          <span class="contact-link-value">+84 365 117 700</span>
+        <div class="cbar-sep"></div>
+        <a href="tel:+84365117700" class="cbar-item">
+          <span class="cbar-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07A19.5 19.5 0 0 1 4.7 12a19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 3.61 1h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L7.91 8.6a16 16 0 0 0 6 6l.96-.96a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/>
+            </svg>
+          </span>
+          <span class="cbar-text">+84 365 117 700</span>
         </a>
-        <a href="https://linkedin.com/in/cuongphanquoc" target="_blank" class="contact-link">
-          <span class="contact-link-icon">💼</span>
-          <span class="contact-link-label">LinkedIn</span>
-          <span class="contact-link-value">/in/cuongphanquoc</span>
+        <div class="cbar-sep"></div>
+        <a href="https://linkedin.com/in/cuongphanquoc" target="_blank" class="cbar-item">
+          <span class="cbar-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"/><rect x="2" y="9" width="4" height="12"/><circle cx="4" cy="4" r="2"/>
+            </svg>
+          </span>
+          <span class="cbar-text">/in/cuongphanquoc</span>
         </a>
-        <a href="#" class="contact-link">
-          <span class="contact-link-icon">📍</span>
-          <span class="contact-link-label">Location</span>
-          <span class="contact-link-value">Dao Duy Tu, District 10, HCMC</span>
-        </a>
+        <div class="cbar-sep"></div>
+        <div class="cbar-item">
+          <span class="cbar-icon">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/>
+            </svg>
+          </span>
+          <span class="cbar-text">District 10, Ho Chi Minh City</span>
+        </div>
       </div>
-      <div class="footer-meta reveal reveal-delay-2">
-        <p>© 2024 Phan Quoc Cuong · All rights reserved.</p>
-        <p style="margin-top:0.4rem">Designed with simplicity &amp; intention.</p>
+
+      <div class="footer-meta reveal reveal-d2">
+        <p>&copy; 2025 Phan Quoc Cuong &middot; All rights reserved.</p>
       </div>
+
     </div>
   </footer>
 
   <!-- LIGHTBOX -->
   <div class="lightbox" id="lightbox" role="dialog" aria-modal="true">
     <div class="lightbox-content">
-      <button class="lightbox-close" id="lightbox-close" aria-label="Close">✕</button>
+      <button class="lightbox-close" id="lightbox-close" aria-label="Close">&times;</button>
       <img id="lightbox-img" src="" alt="Certificate">
     </div>
   </div>
 
   <script src="main.js"></script>
 </body>
-
 </html>
